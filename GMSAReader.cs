@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.DirectoryServices.Protocols;
 using System.IO;
@@ -13,11 +13,11 @@ using CommandLine;
 
 namespace GMSAPasswordReader
 {
-    internal class GMSAReader
+    public class GMSAReader
     {
-        private static readonly Regex DCReplaceRegex = new Regex("DC=", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        public static readonly Regex DCReplaceRegex = new Regex("DC=", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Options options = null;
 
